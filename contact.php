@@ -110,8 +110,8 @@ if (isset($_POST['submitted'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>コンタクトフォーム</title>
-<link href="../bootstrap4/css/bootstrap.min.css" rel="stylesheet">
 <link href="./styles.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
@@ -128,7 +128,7 @@ if (isset($_POST['submitted'])) {
   <hr>
   <?php endif; ?>
   <p>以下のフォームからお問い合わせください。</p>
-  <form id="form" method="post">
+  <form id="form" method="post" action="confirm.php">
     <div class="form-group">
       <label for="name">お名前（必須）</label>
       <input type="text" class="form-control" id="name" name="name" placeholder="氏名" required value="<?php echo h($name); ?>">

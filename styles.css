@@ -41,3 +41,14 @@ p.error, span.error {
 textarea.form-control {
   height: 200px;
 }
+/* 確認ページの表 */
+.confirm_table {
+  margin: 30px 0; 
+}
+.confirm_table table caption{
+  caption-side: top;
+}
+.confirm {
+  float: left;
+  margin-right: 20px;
+}
